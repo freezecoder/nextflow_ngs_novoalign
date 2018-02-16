@@ -1,0 +1,18 @@
+# novosort (V1.04.06) - Build Sep 25 2017 @ 15:26:24
+# (C) 2012 NovoCraft Technologies Sdn Bhd.
+# novosort -i yeast_R_novoalign.bam -o yeast_R.bam
+# License file: /usr/bin/novoalign.lic
+# Licensed to Basespace@Illumina BaseSpace
+# Worker Threads: 2
+# Process Headers..
+# File yeast_R_novoalign.bam
+# Sort Phase..
+#   Sort Buffers: 3
+# File yeast_R_novoalign.bam, 100000 alignment records
+# Merge Phase...
+# 1 memory buffers
+#  100000 alignments merged.
+# Saving BAM index.
+# Done.
+#       Elapsed Time: 0.0 (min.)
+#           CPU Time: 0.0 (min.)

@@ -1,0 +1,64 @@
+# novoalign (AVX2) (V3.08.02 - Build Sep 25 2017 @ 15:26:24) - A short read aligner with qualities.
+# (C) 2008-2016 Novocraft Technologies Sdn Bhd.
+# License file: /usr/bin/novoalign.lic
+# Licensed to Basespace@Illumina BaseSpace
+#  novoalign -d genome.index -f yeast_R1.fastq.gz yeast_R2.fastq.gz -oSAM -H --hlimit 7
+# Starting at Fri Feb 16 15:41:49 2018
+# Interpreting input files as Sanger FASTQ.
+# Index Build Version: 3.8
+#   Hash length:   10
+#     Step size:    1
+#       Paired Reads:    50000
+#       Proper Pairs:    13195 (26.4%)
+#     Read Sequences:   100000
+#   Unique Alignment:    81074 (81.1%)
+#       Multi Mapped:    16959 (17.0%)
+#   No Mapping Found:     1372 ( 1.4%)
+# QC Failures...
+# Homopolymer Filter:       38 ( 0.0%)
+#        Read Length:      557 ( 0.6%)
+#       Elapsed Time: 16.974 (secs.)
+#           CPU Time: 32.45 (secs.)
+# Fragment Length Distribution
+#	From	To	Count
+#	15	29	21
+#	30	44	93
+#	45	59	101
+#	60	74	115
+#	75	89	103
+#	90	104	97
+#	105	119	90
+#	120	134	82
+#	135	149	98
+#	150	164	79
+#	165	179	91
+#	180	194	104
+#	195	209	193
+#	210	224	537
+#	225	239	1025
+#	240	254	1366
+#	255	269	1255
+#	270	284	1136
+#	285	299	1053
+#	300	314	937
+#	315	329	881
+#	330	344	678
+#	345	359	467
+#	360	374	253
+#	375	389	75
+#	390	404	9
+#	405	419	8
+#	420	434	1
+#	435	449	4
+#	450	464	3
+#	465	479	2
+#	480	494	5
+#	495	509	3
+#	510	524	1
+#	525	539	0
+#	540	554	1
+#	555	569	0
+#	570	584	0
+#	585	599	1
+# Mean   264, Std Dev  67.5
+# Done at Fri Feb 16 15:42:06 2018
