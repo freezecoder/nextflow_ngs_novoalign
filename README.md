@@ -28,21 +28,12 @@ You can obtain a Novoalign license at http://www.novocraft.com/buy
 Running
 ----------
 
-'''{sh}
+```sh}
 
-nextflow run -resume main.nf  --genome testdata/yeast_genome.fa  --reads "testdata/*{1,2}.fastq.gz" 
-N E X T F L O W  ~  version 0.27.4
-Launching `mapsimple.groovy` [evil_austin] - revision: 530dce4056
-illumina
-sample123
-[warm up] executor > local
-Aligning with Novoalign
-[51/a0341e] Cached process > buildNovoIndex
-[be/c13bcb] Cached process > novoalign (yeast_R)
-[ea/d2efcd] Cached process > novosort (pair_id)
-[29/562757] Cached process > samtoolsVarCall (yeast_R)
+nextflow run -resume main.nf  --genome testdata/yeast_genome.fa  --reads "testdata/*{1,2}.fastq.gz"
 
-'''
+
+```
 
 
 Results
