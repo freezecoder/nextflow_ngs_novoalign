@@ -40,18 +40,20 @@ Using S3 Storage
 
 ```{sh}
 
-nextflow run -resume mapsimple.groovy --genome $LOCALPATH/testdata/yeast_genome.fa  --reads "s3://bucketname/inputs/*{1,2}.fastq.gz" --outdir s3://bucketname/results00000133
+nextflow run main.nf --genome $LOCALPATH/testdata/yeast_genome.fa  --reads "s3://bucketname/inputs/*{1,2}.fastq.gz" --outdir s3://bucketname/results00000133
 
 ```
 
 
-For Cloud storage use
+For Cloud storage use s3 paths but the pipeline will run locally
 
 ```{sh}
 
-nextflow run  mapsimple.groovy --genome "s3://nx001/inputs/yeast_genome.fa"  --reads "s3://nx001/inputs/*{1,2}.fastq.gz" --outdir s3://nx001/batchjob0000001 -w s3://nx001/tmp0000011
+nextflow run  main --genome "s3://bucketname/inputs/yeast_genome.fa"  --reads "s3://bucketname/inputs/*{1,2}.fastq.gz" --outdir s3://bucketname/batchjob0000001 -w s3://nx001/tmp0000011
 
 ```
+
+
 
 Results
 ----------
