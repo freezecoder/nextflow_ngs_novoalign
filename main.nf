@@ -114,7 +114,7 @@ process samtoolsVarCall {
     publishDir "${params.outdir}/varcalls", mode: 'copy', overwrite: true
      
     input:
-    set pair_id, bam_file from sorted_bam
+    set pair_id, file(bam_file) from sorted_bam
     file genome from genome_file
       
     output:
