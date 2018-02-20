@@ -44,8 +44,14 @@ nextflow run -resume mapsimple.groovy --genome $LOCALPATH/testdata/yeast_genome.
 
 ```
 
-Seems as though S3 paths dont work in the variant calling section
 
+For Cloud storage use
+
+```{sh}
+
+nextflow run  mapsimple.groovy --genome "s3://nx001/inputs/yeast_genome.fa"  --reads "s3://nx001/inputs/*{1,2}.fastq.gz" --outdir s3://nx001/batchjob0000001 -w s3://nx001/tmp0000011
+
+```
 
 Results
 ----------
