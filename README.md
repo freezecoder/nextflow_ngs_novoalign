@@ -14,7 +14,7 @@ This is intended to run on a linux or mac machine and assumes familiarity with u
 
 * Install Nextflow
 * Install docker
-
+* Clone this repository
 
 Edit main.nf and change the docker imagenames in the "container" section
 
@@ -49,7 +49,7 @@ For Cloud storage use s3 paths but the pipeline will run locally
 
 ```{sh}
 
-nextflow run  main --genome "s3://bucketname/inputs/yeast_genome.fa"  --reads "s3://bucketname/inputs/*{1,2}.fastq.gz" --outdir s3://bucketname/batchjob0000001 -w s3://nx001/tmp0000011
+nextflow run  main.nf --genome "s3://bucketname/inputs/yeast_genome.fa"  --reads "s3://bucketname/inputs/*{1,2}.fastq.gz" --outdir s3://bucketname/batchjob0000001 -w s3://nx001/tmp0000011
 
 ```
 
